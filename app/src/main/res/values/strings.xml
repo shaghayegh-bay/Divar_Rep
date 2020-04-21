@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">دیوار</string>
+    <string name="price">قیمت</string>
+    <string name="time">زمان</string>
+    <string name="title">عنوان</string>
+    <string name="filters">فیلترها</string>
+    <string name="lists">دسته‌ها</string>
+    <string name="search_in_all_ads_edit_text">جستجو در همه آگهی‌ها</string>
+    <string name="cars_list_box">خودرو سواری</string>
+    <string name="apartment_sell_list_box">فروش آپارتمان</string>
+    <string name="apartment_rent_list_box">اجاره آپارتمان</string>
+    <string name="mobile_list_box">موبایل</string>
+    <string name="furniture_list_box">مبلمان</string>
+    <string name="personal_equipment_list_box">وسایل شخصی</string>
+    <string name="tehran_city_txt">تهران</string>
+    <string name="divar_txt">دیوار</string>
+    <string name="personal_divar_item">دیوار من</string>
+    <string name="chat_item">چت</string>
+    <string name="insert_ads_item">ثبت آگهی</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -70,14 +70,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(retrofitAdapter);
         fetchData();
-
     }
 
     // رتروفیت, گرفتن داده از سرور
     private void fetchData() {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(APIService.BASE_URL) // Specify your api here
+                .baseUrl(APIService.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

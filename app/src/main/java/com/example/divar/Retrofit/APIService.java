@@ -13,5 +13,5 @@ public interface APIService {
 
     String BASE_URL = "http://shaghayegh.bay.tps-co.ir/";
     @GET("/get_data.php")
-    Call<List<DetailsPojo>> getAdsModels();
+    Call<List<GetAds>> getAdsModels();
 }

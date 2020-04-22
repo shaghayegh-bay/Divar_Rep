@@ -14,22 +14,20 @@ import com.example.divar.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RetrofitAdapter extends RecyclerView.Adapter<RetrofitAdapter.MyViewHolder> {
-    Context context;
     private LayoutInflater inflater;
-    private ArrayList<Item> dataModelArrayList;
+    private ArrayList<ModelRecycler> dataModelArrayList;
 
-    public RetrofitAdapter(ArrayList<Item> dataModelArrayList, Context context) {
-        this.dataModelArrayList = dataModelArrayList;
+    public RetrofitAdapter(ArrayList<ModelRecycler> dataModelArrayList, Context context) {
         inflater = LayoutInflater.from(context);
+        this.dataModelArrayList = dataModelArrayList;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.retro_item, parent, false);
 
         return new MyViewHolder(view);
     }
@@ -37,12 +35,12 @@ public class RetrofitAdapter extends RecyclerView.Adapter<RetrofitAdapter.MyView
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
-        Item item = dataModelArrayList.get(position);
+        ModelRecycler modelRecycler = dataModelArrayList.get(position);
 
-        Picasso.get().load(item.getItemAvatar()).into(holder.avatar);
-        holder.title.setText(item.getItemTitle());
-        holder.price.setText(item.getItemPrice());
-        holder.time.setText(item.getItemTime());
+        Picasso.get().load(modelRecycler.getAvatar()).into(holder.avatar);
+        holder.title.setText(modelRecycler.getTitle());
+        holder.price.setText(modelRecycler.getPrice());
+        holder.time.setText(modelRecycler.getTime());
     }
 
     @Override

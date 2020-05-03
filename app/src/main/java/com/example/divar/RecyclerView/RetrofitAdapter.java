@@ -27,7 +27,7 @@ public class RetrofitAdapter extends RecyclerView.Adapter<RetrofitAdapter.MyView
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.retro_item, parent, false);
+        View view = inflater.inflate(R.layout.retro_item, parent, false);
 
         return new MyViewHolder(view);
     }

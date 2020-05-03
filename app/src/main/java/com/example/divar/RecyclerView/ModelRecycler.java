@@ -1,17 +1,35 @@
 package com.example.divar.RecyclerView;
 
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class ModelRecycler {
+    @SerializedName("Title")
+    @Expose
+    private String Title;
+
+    @SerializedName("Avatar")
+    @Expose
+    private int Avatar;
+
+    @SerializedName("Price")
+    @Expose
+    private String Price;
+
+    @SerializedName("Time")
+    @Expose
+    private String Time;
+
+        /*  public ModelRecycler(int itemAvatar, String itemTitle, String itemPrice, String itemTime) {
+            this.Avatar = itemAvatar;
+            this.Title = itemTitle;
+            this.Price = itemPrice;
+            this.Time = itemTime;
+        }*/
 
 
     public String title, price, time, avatar;
-
-    /*    public Item(int itemAvatar, String itemTitle, String itemPrice, String itemTime) {
-            this.itemAvatar = itemAvatar;
-            this.itemTitle = itemTitle;
-            this.itemPrice = itemPrice;
-            this.itemTime = itemTime;
-        }*/
 
     public String getAvatar() {
         return avatar;

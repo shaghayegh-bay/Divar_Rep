@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <modelRecycler
+    <item
         android:id="@+id/tehran_city_item"
         android:title="@string/tehran_city_txt"
         android:icon="@drawable/ic_divar"/>
-    <modelRecycler
+    <item
         android:id="@+id/lists_item"
         android:title="@string/lists"
         android:icon="@drawable/ic_list_gray_24dp"/>
-    <modelRecycler
+    <item
         android:id="@+id/insert_ads_item"
         android:title="@string/insert_ads_item"
         android:icon="@drawable/ic_add_circle_gray_24dp"/>
 
-    <modelRecycler
+    <item
         android:id="@+id/chat_item"
         android:title="@string/chat_item"
         android:icon="@drawable/ic_question_answer_black_24dp"/>
 
-    <modelRecycler
+    <item
         android:id="@+id/personal_divar_item"
         android:title="@string/personal_divar_item"
         android:icon="@drawable/ic_person_black_24dp"/>

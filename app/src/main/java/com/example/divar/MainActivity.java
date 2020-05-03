@@ -3,7 +3,6 @@ package com.example.divar;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -55,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         APIService api = retrofit.create(APIService.class);
-        Call<List<GetAds>> call = api.getAdsModels();
+        Call<String> call = api.getAdsModels();
 
-        call.enqueue(new Callback<List<GetAds>>() {
+        call.enqueue(new Callback<String>() {
             @Override
-            public void onResponse(Call<List<GetAds>> call, Response<List<GetAds>> response) {
+            public void onResponse(Call<String> call, Response<String> response) {
 
                 Log.e("ResponseString", response.body().toString());
                 //Toast.makeText()
@@ -77,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<GetAds>> call, Throwable t) {
+            public void onFailure(Call<String> call, Throwable t) {
                 Log.e("onEmptyResponse", t.getMessage());//Toast.makeText(getContext(),"Nothing returned",Toast.LENGTH_LONG).show();
 
                 // Toast.makeText(MainActivity.this, "" + t.getMessage().toString(), Toast.LENGTH_SHORT).show();
